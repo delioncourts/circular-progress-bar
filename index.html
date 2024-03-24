@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circular progress bar</title>
+    <link rel="stylesheet" href="./styles/root/root.css">
 </head>
-<body>
-    <header>Progress</header>
-    <main>
-        <div>round</div>
 
-        <div>controllers</div>
+<body class="body">
+    <header class="header">
+        <h1 class="header__title">Progress</h1>
+    </header>
+    <main class="main">
+        <div class="round">
+
+            <div class="spinner">
+                <svg width="160" height="160" viewBox="0 0 160 160" style="transform: rotate(-90deg)">
+                    <circle r="70" cx="80" cy="80" fill="transparent" stroke="#e0e0e0" stroke-width="12px"></circle>
+                    <circle r="70" cx="80" cy="80" fill="transparent" stroke="#005BFF" stroke-width="12px"
+                        stroke-dasharray="439.6px" stroke-dashoffset="109.9px"></circle>
+                </svg>
+            </div>
+        </div>
+
+
+        <div class="controllers">
+
+            <div class="controllers__container">
+
+                <input type="text" placeholder="0" pattern="\d*" maxlength="3" class="value" />
+
+                <p class="controllers__text">Value</p>
+
+            </div>
+
+            <div class="controllers__container">
+
+                <label class="switch">
+                    <input type="checkbox" class="switch__input" onclick="spin()">
+                    <span class="switch__round"></span>
+                </label>
+
+                <p class="controllers__text">Animate</p>
+            </div>
+
+
+            <div class="controllers__container">
+
+                <label class="switch">
+                    <input type="checkbox" class="switch__input" onclick="hide()">
+                    <span class="switch__round"></span>
+                </label>
+
+                <p class="controllers__text">Hide</p>
+            </div>
+
+        </div>
     </main>
+
+    <script src="./scripts/script.js"></script>
 </body>
+
 </html>

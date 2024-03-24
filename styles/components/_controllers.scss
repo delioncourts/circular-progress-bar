@@ -1,0 +1,16 @@
+.controllers {
+    display: flex; 
+    flex-direction: column;
+    gap: 20px; 
+    max-width: 200px;
+    margin: 0 auto;
+
+    &__container{
+        display: flex; 
+        gap: 30px;
+        align-items: center;
+       
+    }
+
+    &__text{}
+}
