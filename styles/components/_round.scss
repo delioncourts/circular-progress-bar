@@ -1,5 +1,8 @@
 .round {
-    height: 180px;
+  display: flex;
+  justify-content: center;
+  height: 180px;
+  
   &__hide {
     display: none;
   }

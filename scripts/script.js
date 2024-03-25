@@ -2,7 +2,7 @@ const round = document.querySelector('.round');
 const spinner = document.querySelector('.spinner');
 
 const hide = () => {
-    round.classList.toggle("round__hide");
+    spinner.classList.toggle("round__hide");
 };
 
 const spin = () => {

@@ -17,7 +17,8 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "GTEestiProDisplay", "Arial", sans-serif;
+  font-family: "Arial", sans-serif;
+  font-weight: 500;
   font-style: normal;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -25,6 +26,18 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+}
+
+.header {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .controllers {
@@ -90,6 +103,8 @@
 }
 
 .round {
+  display: flex;
+  justify-content: center;
   height: 180px;
 }
 .round__hide {
