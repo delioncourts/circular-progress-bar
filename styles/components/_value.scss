@@ -1,13 +1,13 @@
 @use '../base/colors';
 
-.value{
-    outline: none; 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 34px;
-    width: 60px;
-    height: 34px;
-    border: 1px solid colors.$black;
-    padding-left: 15px;
+.value {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 34px;
+  width: 60px;
+  height: 34px;
+  border: 1px solid colors.$black;
+  padding-left: 15px;
 }

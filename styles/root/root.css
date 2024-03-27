@@ -6,12 +6,6 @@
   list-style-type: none;
 }
 
-@font-face {
-  font-family: "GTEestiProDisplay";
-  font-weight: 500;
-  font-display: swap;
-  src: url("../vendors/GTEestiProDisplay-Medium.woff2") format("woff2");
-}
 .body {
   background-color: #fff;
   display: flex;
@@ -39,6 +33,15 @@
   flex-direction: column;
   gap: 20px;
 }
+@media screen and (orientation: landscape) {
+  .main {
+    margin-top: 60px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+}
 
 .controllers {
   display: flex;
@@ -52,6 +55,12 @@
   gap: 30px;
   align-items: center;
 }
+@media screen and (orientation: landscape) {
+  .controllers {
+    margin: 0;
+  }
+}
+
 .switch {
   position: relative;
   display: inline-block;
