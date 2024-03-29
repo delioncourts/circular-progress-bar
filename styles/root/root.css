@@ -124,6 +124,11 @@
   height: 160px;
   animation: rotate 2s infinite ease-in-out;
 }
+@media screen and (orientation: landscape) {
+  .round {
+    width: 180px;
+  }
+}
 
 @keyframes rotate {
   0% {
